@@ -1,4 +1,4 @@
-all : probl1 probl2 probl3 probl4 probl7
+all : probl1 probl2 probl3 probl4 probl7 probl8 probl9 probl10
 
 probl1 : probl1.ml
 	ocamlopt probl1.ml -o probl1
@@ -15,5 +15,14 @@ probl4 : probl4.py
 probl7 : probl7.py
 	chmod +x probl7.py
 
+probl8 : probl8.ml
+	ocamlc probl8.ml -o probl8
+
+probl9 : probl9.py
+	chmod +x probl9.py
+
+probl10 : probl10.py
+	chmod +x probl10.py
+
 clean :
-	rm probl1 probl2
+	rm probl1 probl2 probl8
